@@ -70,13 +70,23 @@
       box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
     }
 
-    .controls {
+    .controls, .controls {
       margin: 15px 0;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
       width: 100%;
+    }
+        .controls .btn {
+      margin: 5px 0;
+      width: 300px;
+      padding: 10px;
+    }
+        .controls2 .btn {
+      margin: 5px 20px;
+      width: 150px;
+      padding: 10px;
     }
 
     .audio-wrapper {
@@ -149,7 +159,8 @@
 
     <div class="controls">
       <button class="btn" onclick="playCurrent()">▶ شروع پخش</button>
-      <br>
+    </div>
+    <div class="controls2">
       <button class="btn" onclick="prevTrack()">⏮ قبلی</button>
       <button class="btn" onclick="nextTrack()">⏭ بعدی</button>
     </div>
